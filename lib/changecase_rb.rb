@@ -3,7 +3,15 @@
 require_relative "changecase_rb/version"
 require_relative "changecase_rb/changecase_rb"
 
-module ChangecaseRb
+class ChangecaseRb # rubocop:disable Style/Documentation
   class Error < StandardError; end
   # Your code goes here...
+
+  def initialize(str)
+    @str = str
+  end
+
+  def alternate_case
+    to_alt_case # calls the underlying Rust function
+  end
 end
