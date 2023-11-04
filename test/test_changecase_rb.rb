@@ -8,6 +8,6 @@ class TestChangecaseRb < Minitest::Test
   end
 
   def test_it_does_something_useful
-    assert false
+    assert_equal "HeLlO wOrLd", ChangecaseRb.new("Hello world").alternate_case
   end
 end
