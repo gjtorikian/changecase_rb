@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "rust-lang.rust-analyzer",
+    "shopify.ruby-lsp",
+    "vadimcn.vscode-lldb"
+  ]
+}
